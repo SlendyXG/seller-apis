@@ -144,6 +144,10 @@ def price_conversion(price: str) -> str:
     Returns:
         Строка, содержащая только цифры из целой части цены.
 
+    Raises:
+        AttributeError: Если аргумент price не является строкой.
+        AttributeError: Если в строке нет ни одной цифры (функция вернёт пустую строку).
+
     Examples:
         >>> price_conversion("5'990.00 руб.")
         '5990'
